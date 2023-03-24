@@ -1,6 +1,7 @@
 package com.ifkaar.external_libraries;
 
 public class Validations {
+    private static final String TAG = "Validations";
     public static boolean validateEmptyField(String text) {
         return !text.isEmpty();
     }

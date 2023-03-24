@@ -8,13 +8,13 @@ import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-public class CommonUtilsTest {
+public class TimeAndDateUtilsTest {
     @Test
     public void computeDateDifference() throws Exception {
         String expectedDate = "1484197200000";
         String outputDate = "1491624000000";
 
-        final Map<TimeUnit, Long> result = CommonUtils.computeDateDifference(
+        final Map<TimeUnit, Long> result = TimeAndDateUtils.computeDateDifference(
                 new Date(Long.parseLong(expectedDate)),
                 new Date(Long.parseLong(outputDate))
         );
@@ -28,7 +28,7 @@ public class CommonUtilsTest {
         //Arrange (create objects)
         String expected = "2:00";
         //Act (Logic execute)
-        String output = CommonUtils.milliSecondToTimer(120000);
+        String output = TimeAndDateUtils.milliSecondToTimer(120000);
         //Assert (expected output)
         assertEquals(expected, output);
     }

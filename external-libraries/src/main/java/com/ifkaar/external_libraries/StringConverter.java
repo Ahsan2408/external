@@ -1,12 +1,7 @@
 package com.ifkaar.external_libraries;
 
-/**
- * This class handles conversions regarding strings.
- *
- * @author Sajid Zeb
- * @version 1.0.0
- */
 public class StringConverter {
+    private static final String TAG = "StringConverter";
 
     /**
      * This method converts word into uppercase.

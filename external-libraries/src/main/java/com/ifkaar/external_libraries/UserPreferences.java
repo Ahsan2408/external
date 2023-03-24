@@ -4,13 +4,8 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-/**
- * It is a utility class to support user preferences.
- *
- * @author Sajid Zeb
- * @version 1.0
- */
 public class UserPreferences {
+    private static final String TAG = "UserPreferences";
 
     @SuppressLint("StaticFieldLeak")
     private static Context context;
